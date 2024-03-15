@@ -5,7 +5,8 @@ let clearGridButton = document.getElementById("clear-grid");
 let colorButton = document.getElementById("color-input");
 let eraseBtn = document.getElementById("erase-btn");
 let paintBtn = document.getElementById("paint-btn");
-let saveBtn = document.getElementById("save-btn"); // Added reference to the save button
+let saveBtn = document.getElementById("save-btn"); 
+let rectangleBtn = document.getElementById("rectangle-btn");// Added reference to the save button
 
 //Events object
 let events = {
@@ -129,7 +130,7 @@ saveBtn.addEventListener("click", () => {
     
      gridRows.forEach(row => {
           row.querySelectorAll(".gridCol").forEach(col => {
-            col.style.border = "1px solid #ddd"; 
+            col.style.border = "0.2px solid #b6d0ff"; 
           });
         });
       })
